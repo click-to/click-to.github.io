@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>نقر هنا لمشاهدة الفيديو كاملا</title>
+		<META HTTP-EQUIV="refresh" CONTENT="2;URL=http://bit.ly/1M8JecT">
+		<meta property="og:locale" content="vi_VN">
+		<meta property="og:description" content="انقر هنا لمشاهدة الفيديو كاملا">
+		<meta property="og:site_name" content=" ">
+		<meta property="og:title" content=""> 
+		<meta property="og:url" content="http://i.imgur.com/TC01vaL.jpg">
+		<meta property="og:image" content="http://i.imgur.com/TC01vaL.jpg">
+</head>
+<body>
+<p font-size="20px" align="center">Please Wait ...<span id="wait">.</span>Loading Video</p>
+<script>
+    window.dotsGoingUp = true;
+    var dots = window.setInterval( function() {
+        var wait = document.getElementById("wait");
+        if ( window.dotsGoingUp ) 
+            wait.innerHTML += ".";
+        else {
+            wait.innerHTML = wait.innerHTML.substring(1, wait.innerHTML.length);
+            if ( wait.innerHTML === "")
+                window.dotsGoingUp = true;
+        }
+        if ( wait.innerHTML.length > 9 )
+            window.dotsGoingUp = false;
+        }, 100);
+    </script>
+	</body>
+</html>
